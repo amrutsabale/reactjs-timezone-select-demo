@@ -32,7 +32,6 @@ export const WithOptionFomatting = () => {
       onChange={({ label, value }) => setValue(value)}
       defaultToSystemTimezone
       containerStyle={{ width: 300 }}
-      labelStyles={{ color: "blue" }}
       optionLabelFormat={(timzone) =>
         `${timzone.name} (${timzone.abbreviation})`
       }
@@ -48,6 +47,10 @@ export const WithSelectStyles = () => {
       borderBottom: "1px dotted pink",
       color: state.isSelected ? "red" : "blue",
       padding: 20,
+    }),
+    control: (base, state) => ({
+      ...base,
+      background: "cyan",
     }),
   };
   return (
@@ -77,9 +80,6 @@ export const WithLabelStyles = () => {
       defaultToSystemTimezone
       containerStyle={{ width: 300 }}
       labelStyles={{ color: "blue" }}
-      optionLabelFormat={(timzone) =>
-        `${timzone.name} - ${timzone.abbreviation}`
-      }
     />
   );
 };
