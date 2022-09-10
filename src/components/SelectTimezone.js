@@ -15,7 +15,7 @@ export const SelectTimezone = ({
   isDisabled,
   isSearchable,
   defaultToSystemTimezone,
-  containerStyle,
+  containerStyles,
   labelStyles,
   selectStyles,
   optionLabelFormat,
@@ -52,7 +52,7 @@ export const SelectTimezone = ({
     : undefined;
 
   return (
-    <div style={containerStyle}>
+    <div style={containerStyles}>
       {label && (
         <div
           style={{

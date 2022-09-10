@@ -15,7 +15,7 @@ export const Primary = () => {
       label="Select Timezone"
       value={value}
       onChange={({ label, value }) => setValue(value)}
-      containerStyle={{ width: 300 }}
+      containerStyles={{ width: 300 }}
     />
   );
 };
@@ -31,7 +31,7 @@ export const WithOptionFomatting = () => {
       value={value}
       onChange={({ label, value }) => setValue(value)}
       defaultToSystemTimezone
-      containerStyle={{ width: 300 }}
+      containerStyles={{ width: 300 }}
       optionLabelFormat={(timzone) =>
         `${timzone.name} (${timzone.abbreviation})`
       }
@@ -61,7 +61,7 @@ export const WithSelectStyles = () => {
       value={value}
       onChange={({ label, value }) => setValue(value)}
       defaultToSystemTimezone
-      containerStyle={{ width: 300 }}
+      containerStyles={{ width: 300 }}
       selectStyles={customStyles}
     />
   );
@@ -78,7 +78,7 @@ export const WithLabelStyles = () => {
       value={value}
       onChange={({ label, value }) => setValue(value)}
       defaultToSystemTimezone
-      containerStyle={{ width: 300 }}
+      containerStyles={{ width: 300 }}
       labelStyles={{ color: "blue" }}
     />
   );
