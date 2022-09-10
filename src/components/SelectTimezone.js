@@ -96,7 +96,7 @@ SelectTimezone.propTypes = {
   value: PropTypes.string,
 
   /**
-   *  OnChaneg handler
+   *  OnChange handler
    */
   onChange: PropTypes.func.isRequired,
 
